@@ -1,479 +1,552 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="الرئاسة - معاً لإعادة البناء | منصة ربط الحرفيين بأصحاب المشاريع في غزة">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="الرئاسة - معاً لإعادة البناء | منصة ربط الحرفيين بأصحاب المشاريع في غزة"
+    />
     <title>الرئاسة - معاً لإعادة البناء</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Progress Bar -->
     <div id="scroll-progress"></div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <i class="fas fa-hammer"></i>
-                    <span>الرئاسة</span>
-                </div>
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <i class="fas fa-hammer"></i>
+            <span>الرئاسة</span>
+          </div>
 
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
-                    <li><a href="#services" class="nav-link">خدماتنا</a></li>
-                    <li><a href="#portfolio" class="nav-link">معرض الأعمال</a></li>
-                    <li><a href="#artisans" class="nav-link">الحرفيون</a></li>
-                    <li><a href="#video" class="nav-link">شاهدنا</a></li>
-                    <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
-                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
-                </ul>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+            <li><a href="#services" class="nav-link">خدماتنا</a></li>
+            <li><a href="#portfolio" class="nav-link">معرض الأعمال</a></li>
+            <li><a href="#artisans" class="nav-link">الحرفيون</a></li>
+            <li><a href="#video" class="nav-link">شاهدنا</a></li>
+            <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+            <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+          </ul>
 
-                <div class="theme-controls">
-                    <button id="themeToggle" class="theme-toggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="mobile-toggle" id="mobileToggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
+          <div class="theme-controls">
+            <button id="themeToggle" class="theme-toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-toggle" id="mobileToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="gradient-text">الرئاسة</span>
-                    <br>معاً لإعادة البناء
-                </h1>
-                <p class="hero-subtitle">
-                    نربط أصحاب الخبرة والحرفيين المهرة بأصحاب المشاريع لإعادة بناء غزة
-                </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">30</span>
-                        <span class="stat-label">حرفي محترف</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">8</span>
-                        <span class="stat-label">مشروع منجز</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">5</span>
-                        <span class="stat-label">تخصصات رئيسية</span>
-                    </div>
-                </div>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">
-                        <i class="fas fa-briefcase"></i>
-                        استعرض أعمالنا
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-phone"></i>
-                        تواصل معنا
-                    </a>
-                </div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="gradient-text">الرئاسة</span>
+            <br />معاً لإعادة البناء
+          </h1>
+          <p class="hero-subtitle">
+            نربط أصحاب الخبرة والحرفيين المهرة بأصحاب المشاريع لإعادة بناء غزة
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">30</span>
+              <span class="stat-label">حرفي محترف</span>
             </div>
+            <div class="stat-item">
+              <span class="stat-number">8</span>
+              <span class="stat-label">مشروع منجز</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5</span>
+              <span class="stat-label">تخصصات رئيسية</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-primary">
+              <i class="fas fa-briefcase"></i>
+              استعرض أعمالنا
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-phone"></i>
+              تواصل معنا
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">ماذا نقدم</span>
-                <h2 class="section-title">خدماتنا المتميزة</h2>
-                <p class="section-description">نوفر مجموعة متكاملة من خدمات البناء والتشطيب على أيدي حرفيين مهرة</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-hammer"></i>
-                    </div>
-                    <h3 class="service-title">البناء والتشييد</h3>
-                    <p class="service-description">بناء المنازل والمنشآت من الأساس بأعلى معايير الجودة</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> بناء الهياكل الخرسانية</li>
-                        <li><i class="fas fa-check"></i> البناء بالطوب والحجر</li>
-                        <li><i class="fas fa-check"></i> صب الأسقف والأعمدة</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3 class="service-title">الكهرباء</h3>
-                    <p class="service-description">تركيب وصيانة الأنظمة الكهربائية بكفاءة واحترافية</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> تمديد الأسلاك الكهربائية</li>
-                        <li><i class="fas fa-check"></i> تركيب اللوحات الكهربائية</li>
-                        <li><i class="fas fa-check"></i> إضاءة داخلية وخارجية</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-faucet"></i>
-                    </div>
-                    <h3 class="service-title">السباكة</h3>
-                    <p class="service-description">خدمات سباكة شاملة للمياه والصرف الصحي</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> تمديد أنابيب المياه</li>
-                        <li><i class="fas fa-check"></i> تركيب الصرف الصحي</li>
-                        <li><i class="fas fa-check"></i> صيانة الحمامات والمطابخ</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chair"></i>
-                    </div>
-                    <h3 class="service-title">النجارة</h3>
-                    <p class="service-description">تصنيع وتركيب الأبواب والنوافذ والأثاث الخشبي</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> تركيب الأبواب والنوافذ</li>
-                        <li><i class="fas fa-check"></i> صناعة الأثاث المخصص</li>
-                        <li><i class="fas fa-check"></i> الديكورات الخشبية</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-roller"></i>
-                    </div>
-                    <h3 class="service-title">التشطيب والدهان</h3>
-                    <p class="service-description">أعمال التشطيبات النهائية والدهانات بأحدث التقنيات</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> دهانات داخلية وخارجية</li>
-                        <li><i class="fas fa-check"></i> تركيب السيراميك والبلاط</li>
-                        <li><i class="fas fa-check"></i> الديكورات الجبسية</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ماذا نقدم</span>
+          <h2 class="section-title">خدماتنا المتميزة</h2>
+          <p class="section-description">
+            نوفر مجموعة متكاملة من خدمات البناء والتشطيب على أيدي حرفيين مهرة
+          </p>
         </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3 class="service-title">البناء والتشييد</h3>
+            <p class="service-description">
+              بناء المنازل والمنشآت من الأساس بأعلى معايير الجودة
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> بناء الهياكل الخرسانية</li>
+              <li><i class="fas fa-check"></i> البناء بالطوب والحجر</li>
+              <li><i class="fas fa-check"></i> صب الأسقف والأعمدة</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="service-title">الكهرباء</h3>
+            <p class="service-description">
+              تركيب وصيانة الأنظمة الكهربائية بكفاءة واحترافية
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> تمديد الأسلاك الكهربائية</li>
+              <li><i class="fas fa-check"></i> تركيب اللوحات الكهربائية</li>
+              <li><i class="fas fa-check"></i> إضاءة داخلية وخارجية</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-faucet"></i>
+            </div>
+            <h3 class="service-title">السباكة</h3>
+            <p class="service-description">
+              خدمات سباكة شاملة للمياه والصرف الصحي
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> تمديد أنابيب المياه</li>
+              <li><i class="fas fa-check"></i> تركيب الصرف الصحي</li>
+              <li><i class="fas fa-check"></i> صيانة الحمامات والمطابخ</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chair"></i>
+            </div>
+            <h3 class="service-title">النجارة</h3>
+            <p class="service-description">
+              تصنيع وتركيب الأبواب والنوافذ والأثاث الخشبي
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> تركيب الأبواب والنوافذ</li>
+              <li><i class="fas fa-check"></i> صناعة الأثاث المخصص</li>
+              <li><i class="fas fa-check"></i> الديكورات الخشبية</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-paint-roller"></i>
+            </div>
+            <h3 class="service-title">التشطيب والدهان</h3>
+            <p class="service-description">
+              أعمال التشطيبات النهائية والدهانات بأحدث التقنيات
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> دهانات داخلية وخارجية</li>
+              <li><i class="fas fa-check"></i> تركيب السيراميك والبلاط</li>
+              <li><i class="fas fa-check"></i> الديكورات الجبسية</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">أعمالنا</span>
-                <h2 class="section-title">معرض المشاريع المنجزة</h2>
-                <p class="section-description">استعرض مشاريعنا الناجحة في مختلف التخصصات</p>
-            </div>
-
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">
-                    <i class="fas fa-th"></i> الكل
-                </button>
-                <button class="filter-btn" data-filter="بناء">
-                    <i class="fas fa-building"></i> البناء
-                </button>
-                <button class="filter-btn" data-filter="كهرباء">
-                    <i class="fas fa-bolt"></i> الكهرباء
-                </button>
-                <button class="filter-btn" data-filter="سباكة">
-                    <i class="fas fa-faucet"></i> السباكة
-                </button>
-                <button class="filter-btn" data-filter="نجارة">
-                    <i class="fas fa-chair"></i> النجارة
-                </button>
-                <button class="filter-btn" data-filter="تشطيب">
-                    <i class="fas fa-paint-roller"></i> التشطيب
-                </button>
-            </div>
-
-            <div class="portfolio-grid" id="portfolioGrid"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">أعمالنا</span>
+          <h2 class="section-title">معرض المشاريع المنجزة</h2>
+          <p class="section-description">
+            استعرض مشاريعنا الناجحة في مختلف التخصصات
+          </p>
         </div>
+
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fas fa-th"></i> الكل
+          </button>
+          <button class="filter-btn" data-filter="بناء">
+            <i class="fas fa-building"></i> البناء
+          </button>
+          <button class="filter-btn" data-filter="كهرباء">
+            <i class="fas fa-bolt"></i> الكهرباء
+          </button>
+          <button class="filter-btn" data-filter="سباكة">
+            <i class="fas fa-faucet"></i> السباكة
+          </button>
+          <button class="filter-btn" data-filter="نجارة">
+            <i class="fas fa-chair"></i> النجارة
+          </button>
+          <button class="filter-btn" data-filter="تشطيب">
+            <i class="fas fa-paint-roller"></i> التشطيب
+          </button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+      </div>
     </section>
 
     <!-- Modal -->
     <div id="projectModal" class="modal">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="modalClose">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-body" id="modalBody"></div>
-        </div>
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
     </div>
 
     <!-- Pricing Table -->
     <section id="pricing" class="pricing-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">الأسعار</span>
-                <h2 class="section-title">جدول الأسعار التقديرية</h2>
-                <p class="section-description">أسعار تنافسية لجميع الخدمات</p>
-            </div>
-
-            <div class="table-wrapper">
-                <table class="pricing-table">
-                    <thead>
-                        <tr>
-                            <th><i class="fas fa-list"></i> الخدمة</th>
-                            <th><i class="fas fa-ruler"></i> الوحدة</th>
-                            <th><i class="fas fa-coins"></i> السعر</th>
-                            <th><i class="fas fa-clock"></i> المدة</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><i class="fas fa-building"></i> بناء جدار</td>
-                            <td>متر مربع</td>
-                            <td>50-80 ₪</td>
-                            <td>يوم / 10م²</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fas fa-bolt"></i> تمديد كهرباء</td>
-                            <td>نقطة</td>
-                            <td>30-50 ₪</td>
-                            <td>ساعة / 5 نقاط</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fas fa-faucet"></i> تركيب سباكة</td>
-                            <td>نقطة</td>
-                            <td>40-70 ₪</td>
-                            <td>ساعتان / 3 نقاط</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fas fa-door-open"></i> تركيب باب</td>
-                            <td>باب</td>
-                            <td>200-400 ₪</td>
-                            <td>3-4 ساعات</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fas fa-paint-roller"></i> دهان غرفة</td>
-                            <td>غرفة</td>
-                            <td>150-300 ₪</td>
-                            <td>يوم واحد</td>
-                        </tr>
-                        <tr>
-                            <td><i class="fas fa-border-all"></i> تركيب سيراميك</td>
-                            <td>متر مربع</td>
-                            <td>60-100 ₪</td>
-                            <td>يوم / 15م²</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">الأسعار</span>
+          <h2 class="section-title">جدول الأسعار التقديرية</h2>
+          <p class="section-description">أسعار تنافسية لجميع الخدمات</p>
         </div>
+
+        <div class="table-wrapper">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th><i class="fas fa-list"></i> الخدمة</th>
+                <th><i class="fas fa-ruler"></i> الوحدة</th>
+                <th><i class="fas fa-coins"></i> السعر</th>
+                <th><i class="fas fa-clock"></i> المدة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="fas fa-building"></i> بناء جدار</td>
+                <td>متر مربع</td>
+                <td>50-80 ₪</td>
+                <td>يوم / 10م²</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-bolt"></i> تمديد كهرباء</td>
+                <td>نقطة</td>
+                <td>30-50 ₪</td>
+                <td>ساعة / 5 نقاط</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-faucet"></i> تركيب سباكة</td>
+                <td>نقطة</td>
+                <td>40-70 ₪</td>
+                <td>ساعتان / 3 نقاط</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-door-open"></i> تركيب باب</td>
+                <td>باب</td>
+                <td>200-400 ₪</td>
+                <td>3-4 ساعات</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-paint-roller"></i> دهان غرفة</td>
+                <td>غرفة</td>
+                <td>150-300 ₪</td>
+                <td>يوم واحد</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-border-all"></i> تركيب سيراميك</td>
+                <td>متر مربع</td>
+                <td>60-100 ₪</td>
+                <td>يوم / 15م²</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
     <!-- Artisans Section -->
     <section id="artisans" class="artisans">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">فريق العمل</span>
-                <h2 class="section-title">الحرفيون المحترفون</h2>
-                <p class="section-description">نخبة من أمهر الحرفيين في مختلف التخصصات</p>
-            </div>
-
-            <div class="artisan-search">
-                <i class="fas fa-search"></i>
-                <input type="text" id="artisanSearch" placeholder="ابحث عن حرفي...">
-            </div>
-
-            <div class="artisans-grid" id="artisansGrid"></div>
-            <div class="pagination" id="pagination"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">فريق العمل</span>
+          <h2 class="section-title">الحرفيون المحترفون</h2>
+          <p class="section-description">
+            نخبة من أمهر الحرفيين في مختلف التخصصات
+          </p>
         </div>
+
+        <div class="artisan-search">
+          <i class="fas fa-search"></i>
+          <input type="text" id="artisanSearch" placeholder="ابحث عن حرفي..." />
+        </div>
+
+        <div class="artisans-grid" id="artisansGrid"></div>
+        <div class="pagination" id="pagination"></div>
+      </div>
     </section>
 
     <!-- Video Section -->
     <section id="video" class="video-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">شاهد أعمالنا</span>
-                <h2 class="section-title">رحلة إعادة البناء</h2>
-                <p class="section-description">فيديو يوضح جهودنا في إعادة بناء غزة</p>
-            </div>
-
-            <div class="video-wrapper">
-                <iframe 
-                    src="https://www.youtube.com/embed/fC2UObOazVQ" 
-                    title="رحلة إعادة البناء"
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">شاهد أعمالنا</span>
+          <h2 class="section-title">رحلة إعادة البناء</h2>
+          <p class="section-description">فيديو يوضح جهودنا في إعادة بناء غزة</p>
         </div>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/fC2UObOazVQ"
+            title="رحلة إعادة البناء"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
     <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">الأسئلة الشائعة</span>
-                <h2 class="section-title">إجابات على استفساراتكم</h2>
-                <p class="section-description">أهم الأسئلة التي قد تخطر على بالكم</p>
-            </div>
-
-            <div class="faq-container" id="faqContainer"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">الأسئلة الشائعة</span>
+          <h2 class="section-title">إجابات على استفساراتكم</h2>
+          <p class="section-description">أهم الأسئلة التي قد تخطر على بالكم</p>
         </div>
+
+        <div class="faq-container" id="faqContainer"></div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">تواصل معنا</span>
-                <h2 class="section-title">نحن هنا لمساعدتك</h2>
-                <p class="section-description">تواصل معنا الآن وسنكون سعداء بخدمتك</p>
-            </div>
-
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <h3>العنوان</h3>
-                            <p>غزة - فلسطين</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-phone"></i></div>
-                        <div>
-                            <h3>الهاتف</h3>
-                            <p>+970 59 123 4567</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h3>البريد الإلكتروني</h3>
-                            <p>info@alreasa.ps</p>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label><i class="fas fa-user"></i> الاسم الكامل</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="form-group">
-                        <label><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
-                        <input type="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label><i class="fas fa-phone"></i> رقم الهاتف</label>
-                        <input type="tel" required>
-                    </div>
-                    <div class="form-group">
-                        <label><i class="fas fa-briefcase"></i> نوع الخدمة</label>
-                        <select required>
-                            <option value="">اختر الخدمة</option>
-                            <option>البناء</option>
-                            <option>الكهرباء</option>
-                            <option>السباكة</option>
-                            <option>النجارة</option>
-                            <option>التشطيب</option>
-                        </select>
-                    </div>
-                    <div class="form-group full-width">
-                        <label><i class="fas fa-comment"></i> رسالتك</label>
-                        <textarea rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary full-width">
-                        <i class="fas fa-paper-plane"></i> إرسال الرسالة
-                    </button>
-                </form>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">تواصل معنا</span>
+          <h2 class="section-title">نحن هنا لمساعدتك</h2>
+          <p class="section-description">تواصل معنا الآن وسنكون سعداء بخدمتك</p>
         </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h3>العنوان</h3>
+                <p>غزة - فلسطين</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h3>الهاتف</h3>
+                <p>+970 59 123 4567</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h3>البريد الإلكتروني</h3>
+                <p>info@alreasa.ps</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label><i class="fas fa-user"></i> الاسم الكامل</label>
+              <input type="text" required />
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+              <input type="email" required />
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-phone"></i> رقم الهاتف</label>
+              <input type="tel" required />
+            </div>
+            <div class="form-group">
+              <label><i class="fas fa-briefcase"></i> نوع الخدمة</label>
+              <select required>
+                <option value="">اختر الخدمة</option>
+                <option>البناء</option>
+                <option>الكهرباء</option>
+                <option>السباكة</option>
+                <option>النجارة</option>
+                <option>التشطيب</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label><i class="fas fa-comment"></i> رسالتك</label>
+              <textarea rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fas fa-paper-plane"></i> إرسال الرسالة
+            </button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <!-- Column 1 -->
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <i class="fas fa-hammer"></i>
-                        <span>الرئاسة</span>
-                    </div>
-                    <p class="footer-desc">منصة متخصصة في ربط الحرفيين المهرة بأصحاب المشاريع لإعادة بناء غزة</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <!-- Column 2 -->
-                <div class="footer-col">
-                    <h3><i class="fas fa-link"></i> روابط سريعة</h3>
-                    <ul>
-                        <li><a href="#home">الرئيسية</a></li>
-                        <li><a href="#services">خدماتنا</a></li>
-                        <li><a href="#portfolio">معرض الأعمال</a></li>
-                        <li><a href="#artisans">الحرفيون</a></li>
-                        <li><a href="#faq">الأسئلة الشائعة</a></li>
-                        <li><a href="#contact">تواصل معنا</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3 -->
-                <div class="footer-col">
-                    <h3><i class="fas fa-tools"></i> خدماتنا</h3>
-                    <ul>
-                        <li><i class="fas fa-building"></i> البناء والتشييد</li>
-                        <li><i class="fas fa-bolt"></i> الأعمال الكهربائية</li>
-                        <li><i class="fas fa-faucet"></i> السباكة والصرف</li>
-                        <li><i class="fas fa-chair"></i> النجارة والأثاث</li>
-                        <li><i class="fas fa-paint-roller"></i> التشطيب والدهان</li>
-                    </ul>
-                </div>
-
-                <!-- Column 4 -->
-                <div class="footer-col">
-                    <h3><i class="fas fa-user-graduate"></i> معلومات الطالبة</h3>
-                    <ul class="student-info">
-                        <li><i class="fas fa-user"></i> <strong>الاسم:</strong> آلاء أحمد أبو عمرة</li>
-                        <li><i class="fas fa-id-card"></i> <strong>الرقم:</strong> 2011250363</li>
-                        <li><i class="fas fa-graduation-cap"></i> <strong>التخصص:</strong> ماجستير تكنولوجيا التعليم</li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:alaahmed1612@gmail.com">alaahmed1612@gmail.com</a></li>
-                        <li><i class="fas fa-university"></i> جامعة الأقصى</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <!-- Column 1 -->
+          <div class="footer-col">
+            <div class="footer-logo">
+              <i class="fas fa-hammer"></i>
+              <span>الرئاسة</span>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 الرئاسة - معاً لإعادة البناء. جميع الحقوق محفوظة</p>
+            <p class="footer-desc">
+              منصة متخصصة في ربط الحرفيين المهرة بأصحاب المشاريع لإعادة بناء غزة
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="footer-col">
+            <h3><i class="fas fa-link"></i> روابط سريعة</h3>
+            <ul>
+              <li><a href="#home">الرئيسية</a></li>
+              <li><a href="#services">خدماتنا</a></li>
+              <li><a href="#portfolio">معرض الأعمال</a></li>
+              <li><a href="#artisans">الحرفيون</a></li>
+              <li><a href="#faq">الأسئلة الشائعة</a></li>
+              <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="footer-col">
+            <h3><i class="fas fa-tools"></i> خدماتنا</h3>
+            <ul>
+              <li><i class="fas fa-building"></i> البناء والتشييد</li>
+              <li><i class="fas fa-bolt"></i> الأعمال الكهربائية</li>
+              <li><i class="fas fa-faucet"></i> السباكة والصرف</li>
+              <li><i class="fas fa-chair"></i> النجارة والأثاث</li>
+              <li><i class="fas fa-paint-roller"></i> التشطيب والدهان</li>
+            </ul>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="footer-col">
+            <h3><i class="fas fa-user-graduate"></i> معلومات الطالبة</h3>
+            <ul class="student-info">
+              <li>
+                <i class="fas fa-user"></i> <strong>الاسم:</strong> آلاء أحمد
+                أبو عمرة
+              </li>
+              <li>
+                <i class="fas fa-id-card"></i>
+                <strong>الرقم:</strong> 2011250363
+              </li>
+              <li>
+                <i class="fas fa-graduation-cap"></i>
+                <strong>التخصص:</strong> ماجستير تكنولوجيا التعليم
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:alaahmed1612@gmail.com"
+                  >alaahmed1612@gmail.com</a
+                >
+              </li>
+              <li><i class="fas fa-university"></i> جامعة الأقصى</li>
+            </ul>
+          </div>
+          <!---column 5-->
+          <div class="footer-col">
+            <h3><i class="fas fa-user-graduate"></i> معلومات الطالبة</h3>
+            <ul class="student-info">
+              <li>
+                <i class="fas fa-user"></i> <strong>الاسم:</strong> وسام أحمد
+                أبو عمرة
+              </li>
+              <li>
+                <i class="fas fa-id-card"></i>
+                <strong>الرقم:</strong> 2011250432
+              </li>
+              <li>
+                <i class="fas fa-graduation-cap"></i>
+                <strong>التخصص:</strong> ماجستير تكنولوجيا التعليم
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:alaahmed1612@gmail.com"
+                  >wessam.a7med12@gmail.com</a
+                >
+              </li>
+              <li><i class="fas fa-university"></i> جامعة الأقصى</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 الرئاسة - معاً لإعادة البناء. جميع الحقوق محفوظة</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Back to Top -->
     <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Toast -->
     <div id="toast" class="toast"></div>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
